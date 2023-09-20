@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+</head>
+<body>
+    <img src="Friends.PNG"  width="200" height="200">
+    <center><h2>Freindship Zone</h2></center>
+    <h3>Add your details to register</h3>
+    <form autocomplete="off">
+    <div><strong>Name:</strong><input type="text" placeholder="Enter your name" id="Name" pattern="[A-za-z]{4,}" title="Enter name more than 3 characters" ></div><label for=Name></label>
+    <br>
+    <div><strong>Email:</strong><input type="email" ></div>
+    <br>
+    <div><strong>Age:</strong><input type="text" pattern="[0-9]{18,}" title="Age should be more than 18"></div>
+    <br>
+    <div><strong>Birthday:</strong><input type="text" placeholder="mm/dd/yyyy"></div>
+    <br>
+    <div><strong>Gender:</strong> <span><input type="radio" id="M"name="Gender" value="M">M<input type="radio" id="F" name="Gender" value="F">F</span></div>
+    <br>
+    <div><strong>About:</strong><textarea rows="4" cols="50"></textarea></div>
+    <br>
+    <div><strong>Phone:</strong><input type="text"></div>
+    <br>
+    <br>
+    <br>
+    <div><strong>Inetersted in:</strong><input type="checkbox">Friendship</input>
+        <input type="checkbox">Dating  </input><strong>Attachment:</strong><input type="file" multiple></div>
+    <input type="submit" value="Rgister" formaction="RegistrationConfirmation.html" >
+    <input type="submit" value="Rgister as Admin" formaction="RegistrationConformationforAdmin.html" formnovalidate="formnovalidate">
+    </form>
+</body>
+</html>
